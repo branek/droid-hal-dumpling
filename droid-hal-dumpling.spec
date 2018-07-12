@@ -29,6 +29,10 @@
 /vndservice_contexts\
 %{nil}
 
+%define android_config \
+#define WANT_ADRENO_QUIRKS 1\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
